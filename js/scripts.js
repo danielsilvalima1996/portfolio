@@ -9,8 +9,6 @@
 
 window.addEventListener('DOMContentLoaded', event => {
 
-    window.open('https://apirest-mecanica.herokuapp.com/api/dados-dashboard');
-
     // Activate Bootstrap scrollspy on the main nav element
     const sideNav = document.body.querySelector('#sideNav');
     if (sideNav) {
