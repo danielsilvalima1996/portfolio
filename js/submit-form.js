@@ -35,7 +35,7 @@ function submitForm() {
             created: null
         }
 
-        const minhaUrl = "http://localhost:8080/api/contact"
+        const minhaUrl = "https://generic-api-daniel.herokuapp.com/api/contact"
         fetch(
             minhaUrl,
             {
