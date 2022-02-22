@@ -3183,14 +3183,14 @@ textarea.form-control-lg {
 }
 
 .btn-primary {
-  color: #000;
-  background-color: #027fe9;
+  color: #fff;
+  background-color: var(--bs-primary);
   border-color: #027fe9;
 }
 
 .btn-primary:hover {
-  color: #000;
-  background-color: #c77556;
+  color: #fff;
+  background-color: var(--bs-secondary);
   border-color: #c46d4c;
 }
 
@@ -5348,7 +5348,7 @@ textarea.form-control-lg {
 .alert {
   position: relative;
   padding: 1rem 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 5rem;
   border: 1px solid transparent;
   border-radius: 0.25rem;
 }
