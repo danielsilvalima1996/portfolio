@@ -26,13 +26,13 @@ function submitForm() {
         let ddd = phone.substr(0, 2);
         phone = phone.substr(2);
 
+        const token = "6950991991:AAHKtB2hQZVxALvDEl-T0G-e1mWuT1Li53M";
+        const chatId = "650115584";
+
         const json = {
             chat_id: chatId,
             text: `Nome: ${name} | E-mail: ${email} | Telefone: (${ddd}) ${phone} | message: ${message}`,
           };
-
-        const token = "6950991991:AAHKtB2hQZVxALvDEl-T0G-e1mWuT1Li53M";
-        const chatId = "650115584";
       
         const apiUrl = `https://api.telegram.org/bot${token}/sendMessage`;
         fetch(
