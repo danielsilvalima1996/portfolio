@@ -26,22 +26,21 @@ function submitForm() {
         let ddd = phone.substr(0, 2);
         phone = phone.substr(2);
 
-        const data = {
-            name,
-            email,
-            ddd,
-            phone,
-            message,
-            created: null
-        }
+        const json = {
+            chat_id: chatId,
+            text: `Nome: ${name} | E-mail: ${email} | Telefone: (${ddd}) ${phone} | message: ${message}`,
+          };
 
-        const minhaUrl = "https://generic-api-daniel.herokuapp.com/api/contact"
+        const token = "6950991991:AAHKtB2hQZVxALvDEl-T0G-e1mWuT1Li53M";
+        const chatId = "650115584";
+      
+        const apiUrl = `https://api.telegram.org/bot${token}/sendMessage`;
         fetch(
-            minhaUrl,
+            apiUrl,
             {
                 method: "POST",
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(data)
+                body: JSON.stringify(json)
             }
         ).then(function (data) {
 
